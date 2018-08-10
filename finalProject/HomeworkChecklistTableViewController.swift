@@ -56,7 +56,8 @@ class HomeworkChecklistTableViewController: UITableViewController {
         
         if let name = assignment.assignment {
             if assignment.dueSoon {
-                cell.textLabel?.text = "❗" + name
+                cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 17.0)
+                cell.textLabel?.text =  name
             } else {
                 cell.textLabel?.text = assignment.assignment
             }
